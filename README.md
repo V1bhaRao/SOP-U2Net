@@ -17,9 +17,9 @@ The following libraries (as mentioned in the Github) are required to be download
 DUTS-TR (or any other relevant) dataset can be downloaded for training and testing purpose.
 
 1. model/u2net.py- The U2-net architecture is specified here with a ReSidual U-block (RSU) on the bottom level and a U-Net like structure in the top level.   
-2. u2net_train.py- This file can be run to train the model. The model name and directory of training dataset folder can be specified from lines 49-53. (The pre-trained model and weights can also be directly downloaded from https://drive.google.com/file/d/1ao1ovG1Qtx4b7EoskHXmi2E9rp5CHLcZ/view . The predicted saliency maps for datasets SOD, ECSSD, DUT-OMRON, PASCAL-S, HKU-IS and DUTS-TE can be found in https://drive.google.com/file/d/1mZFWlS4WygWh1eVI8vK2Ad9LrPq4Hp5v/view )
+2. u2net_train.py- This file can be run to train the model. The model name and directory of training dataset folder can be specified from lines 49-53. (The pre-trained model and weights can also be directly downloaded from https://drive.google.com/file/d/1ao1ovG1Qtx4b7EoskHXmi2E9rp5CHLcZ/view and put inside the saved_model folder like: 'saved_models/u2net/'. The predicted saliency maps for datasets SOD, ECSSD, DUT-OMRON, PASCAL-S, HKU-IS and DUTS-TE can be found in https://drive.google.com/file/d/1mZFWlS4WygWh1eVI8vK2Ad9LrPq4Hp5v/view )
 3. u2net_test.py- This file can be used for trianing. The model name and image paths can be set from lines 57-63.  
   
-
-  
 The resulting images can be found in test_data/u2net_results.
+
+Similar steps can be followed for the smaller version (4.7 MB) of the model as well.
